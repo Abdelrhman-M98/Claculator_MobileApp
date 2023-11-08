@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="OPb_button_color">#D4D4D2</color>
+    <color name="OP_button_color">#FF9500</color>
+    <color name="button_color">#505050</color>
+    <color name="Dark_color">#1C1C1C</color>
+
+
+</resources>
+
+

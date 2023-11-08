@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_color"
+    tools:context=".Calculator">
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="234dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Your Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="405dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        app:layout_constraintVertical_bias="0.428"
+        tools:ignore="RtlCompat" />
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="true"
+        android:rowCount="5"
+        android:rowOrderPreserved="false"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/Calculator_OP_Button"
+            android:text="AC"
+            />
+
+        <Button
+            android:id="@+id/buttonOPS"
+            style="@style/Calculator_OP_Button"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/buttonREM"
+            style="@style/Calculator_OP_Button"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/buttonDIV"
+            style="@style/OP_Button"
+            android:text="/"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/CalculatorButton"
+            android:text="7"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/CalculatorButton"
+            android:text="8"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/CalculatorButton"
+            android:text="9"
+            tools:ignore="DuplicateIds"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/buttonMUL"
+            style="@style/OP_Button"
+            android:text="x"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/CalculatorButton"
+            android:text="4"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/CalculatorButton"
+            android:text="5"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/CalculatorButton"
+            android:text="6"
+
+            android:textColor="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSUB"
+            style="@style/OP_Button"
+            android:text="-"
+            android:textSize="60dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/CalculatorButton"
+            android:text="1"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/CalculatorButton"
+            android:text="2"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/CalculatorButton"
+            android:text="3"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/buttonADD"
+            style="@style/OP_Button"
+            android:text="+"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/CalculatorButton"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="2"
+            android:text="0"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/buttonDOT"
+            style="@style/CalculatorButton"
+            android:text="."
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            style="@style/OP_Button"
+            android:text="="
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
